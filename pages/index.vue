@@ -1,39 +1,31 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
+    <div class="content">
       <h1 class="title">
-        neu-interactive
+        Neu Interactive
       </h1>
-      <h2 class="subtitle">
-        Neu Interactive website
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
+      <p>
+        is a software consultancy in New York City that makes distinctive products, services, and experiences.
+      </p>
+      <p>See what we've been up to</p>
+      <div class="arrow">⤑</div>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+
 
 export default {
   components: {
-    Logo
+  },
+  head: {
+    title: 'Neu Interactive'
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -41,27 +33,29 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  .content {
+    max-width: 570px;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+    .title {
+      display: block;
+      font-weight: 400;
+      font-size: 4.8rem;
+      margin-bottom: 20px;
+    }
 
-.links {
-  padding-top: 15px;
+    p {
+      font-weight: 300;
+      line-height: 1.25;
+      font-size: 2.4rem;
+      padding-bottom: 15px;
+    }
+
+    .arrow {
+      margin-top: 10px;
+      font-size: 3rem;
+      transform: rotate(90deg);
+    }
+  }
 }
 </style>

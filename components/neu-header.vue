@@ -5,8 +5,8 @@
         <n-link to="/">N</n-link>
       </div>
       <div class="center">
-        <n-link to="/about">about</n-link>• 
-        <n-link to="/work">work</n-link>• 
+        <n-link to="/about">about</n-link>•
+        <n-link to="/work">work</n-link>•
         <n-link to="/contact">contact</n-link>
       </div>
     </nav>
@@ -32,7 +32,10 @@ nav {
   align-items: center;
   padding: 0 20px;
 
-  a, span {
+  display: none;
+
+  a,
+  span {
     font-size: 2rem;
     margin: 0 10px;
     color: $color-primary;

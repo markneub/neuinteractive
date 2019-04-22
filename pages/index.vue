@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <starfield />
     <div class="content">
       <h1 class="title">
         Neu Interactive
@@ -7,17 +8,18 @@
       <p>
         is a software consultancy in New York City that makes distinctive products, services, and experiences.
       </p>
-      <p>See what we've been up to</p>
+      <p>See what we've been up to:</p>
       <div class="arrow">⤑</div>
     </div>
   </section>
 </template>
 
 <script>
-
+import Starfield from '~/components/starfield'
 
 export default {
   components: {
+    Starfield
   },
   head: {
     title: 'Neu Interactive'

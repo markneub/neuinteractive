@@ -1,23 +1,19 @@
 <template>
   <div>
-    <neu-header />
     <nuxt />
   </div>
 </template>
 
 <script>
-import NeuHeader from '~/components/neu-header'
-
 export default {
-  components: { NeuHeader }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '~assets/_common';
+
 html {
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 62.5%;
-  color: #e5dfc5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -26,14 +22,10 @@ html {
 }
 
 body {
-  background: radial-gradient(
-    farthest-corner at 50% 50%,
-    #002237 0%,
-    #18121e 70%,
-    #000000 100%
-  );
-  min-height: 100vh;
   font-size: 1.6rem;
+  background-color: $grey;
+  color: $white;
+  @include bodyFont;
 }
 
 *,

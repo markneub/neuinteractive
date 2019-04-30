@@ -1,6 +1,12 @@
-$color-light: #E5DFC5;
-$color-dark: #18121e;
-$color-accent: #984b43;
-$color-primary: #eac67a;
-$color-secondary: #91C7A9;
-$color-tertiary: #c791bb;
+$accent: #ed5255;
+$grey: #202324;
+$white: #ede4d8;
+
+@mixin headlineFont {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+@mixin bodyFont {
+  font-family: 'Lora', serif;
+}

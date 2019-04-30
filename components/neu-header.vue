@@ -1,45 +1,41 @@
 <template>
-  <header>
-    <nav class="main">
-      <div class="left">
-        <n-link to="/">N</n-link>
-      </div>
-      <div class="center">
-        <n-link to="/about">about</n-link>•
-        <n-link to="/work">work</n-link>•
-        <n-link to="/contact">contact</n-link>
-      </div>
-    </nav>
-  </header>
+  <nav id="neu-header">
+    <img class="logomark" src="~/assets/logomark.png" alt="Neu logomark" />
+    <span>about</span>
+    <span>work</span>
+    <span>contact</span>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: 'NeuHeader'
 }
 </script>
 
 <style lang="scss">
-@import '../assets/common.scss';
+@import '~assets/_common';
 
-nav {
-  position: absolute;
-  height: 48px;
+#neu-header {
+  position: fixed;
   width: 100%;
-  background: rgba($color-secondary, 0.05);
+  height: 100px;
+  top: 0;
+  left: 0;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  justify-content: center;
 
-  display: none;
-
-  a,
-  span {
-    font-size: 2rem;
+  > * {
     margin: 0 10px;
-    color: $color-primary;
-    text-decoration: none;
+  }
+
+  img.logomark {
+    width: 50px;
+    height: auto;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
   }
 }
 </style>

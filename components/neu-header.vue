@@ -11,7 +11,6 @@
 import { TweenLite, Power1 } from 'gsap/all'
 
 export default {
-  props: ['scrollto'],
   mounted () {
     const scene = this.$scrollmagic.scene({
       triggerHook: 0,

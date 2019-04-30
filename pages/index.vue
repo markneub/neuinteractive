@@ -56,6 +56,8 @@ import { TweenLite, ScrollToPlugin, Power1 } from 'gsap/all'
 import NeuHeader from '~/components/neu-header'
 import Particles from '~/components/particles'
 
+const stp = ScrollToPlugin // eslint-disable-line no-unused-vars
+
 export default {
   components: {
     NeuHeader,

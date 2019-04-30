@@ -3,6 +3,7 @@
     <section>
       <neu-header />
       <div class="splash">
+        <particles />
         <h1>
           Neu Interactive
         </h1>
@@ -52,10 +53,12 @@
 
 <script>
 import NeuHeader from '~/components/neu-header'
+import Particles from '~/components/particles'
 
 export default {
   components: {
-    NeuHeader
+    NeuHeader,
+    Particles
   },
   data () {
     return {
@@ -93,8 +96,21 @@ section {
 
   &:first-of-type {
     margin-top: 0;
-    height: 80vh;
+    padding-bottom: 0;
+    height: 60vh;
     min-height: 600px;
+    position: relative; // contain the particles
+
+    &:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 10rem;
+      background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(32,35,36,1) 100%);
+      pointer-events: none;
+      content: '';
+    }
   }
 
   margin: 0 auto;
@@ -147,12 +163,12 @@ section {
     }
 
     .work {
-      margin-top: 4rem;
+      margin-top: 4.8rem;
       &:first-of-type { margin-top: 0; }
 
       dl {
         overflow: auto;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
               
         dt {
           @include headlineFont;

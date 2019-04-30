@@ -88,6 +88,8 @@ export default {
 
 section {
   padding-bottom: 8rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 
   &:first-of-type {
     margin-top: 0;
@@ -120,15 +122,20 @@ section {
     width: 100%;
     text-align: left;
     overflow: visible;
-    margin-left: 3.2rem;
+    @media screen and (min-width: 900px) {
+      margin-left: 3.2rem;
+    }
 
     h3 {
       display: inline-block;
-      transform: translateX(-100%);
       @include headlineFont;
       color: $accent;
       font-size: 2.4rem;
       margin-bottom: 1.8rem;
+
+      @media screen and (min-width: 900px) {
+        transform: translateX(-100%);
+      }
     }
 
     p {

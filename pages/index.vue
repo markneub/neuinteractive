@@ -36,7 +36,8 @@
             <dt>Tech stack</dt>
             <dd>{{ work.stack }}</dd>
           </dl>
-          <p>{{ work.description }}</p>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <p v-html="work.description"></p>
         </div>
       </div>
     </section>
@@ -79,7 +80,7 @@ export default {
         client: 'Meredith Monk/The House Foundation',
         service: 'Design + full stack development',
         stack: 'React, Next.js, WordPress, Google Cloud',
-        description: 'The artist, composer and musician Meredith Monk was seeking a new website to coincide with promotion of an upcoming benefit concert. The new site would need to advertise upcoming events and host her performance repertory, educational workshops, and store. We partnered with Computer Lab to create a new online experience that would not only meet her short term goals, but would be flexible enough to grow as she continued to expand their her presence. A WordPress backend allows her foundation full editing control over content.'
+        description: 'The artist, composer and musician Meredith Monk was seeking a new website to coincide with promotion of an upcoming benefit concert. The new site would need to advertise upcoming events and host her performance repertory, educational workshops, and store. We partnered with <a href="https://computerlab.io/" rel="noopener noreferrer" target="_blank">Computer Lab</a> to create a new online experience that would not only meet her short term goals, but would be flexible enough to grow as she continued to expand their her presence. A WordPress backend allows her foundation full editing control over content.'
       }]
     }
   },

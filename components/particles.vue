@@ -119,7 +119,7 @@ export default {
   mounted() {
     require('particles.js')
     this.$nextTick(() => {
-      particlesJS('particles', PARTICLE_CONFIG)
+      particlesJS('particles', PARTICLE_CONFIG) // eslint-disable-line no-undef
     })
   }
 }

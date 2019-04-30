@@ -26,6 +26,12 @@ body {
   background-color: $grey;
   color: $white;
   @include bodyFont;
+
+  a {
+    color: $accent;
+    text-decoration: none;
+    border-bottom: 1px solid $accent;
+  }
 }
 
 *,
@@ -33,11 +39,5 @@ body {
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.page {
-  padding-top: 80px;
-  max-width: 800px;
-  margin: 0 auto;
 }
 </style>

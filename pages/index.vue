@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <neu-header />
+      <neu-header @scroll-to="scrollTo" />
       <div class="splash">
         <particles />
         <h1>
@@ -12,15 +12,15 @@
         </h2>
       </div>
     </section>
-    <section>
+    <section id="about">
       <div class="content">
         <h3>about</h3>
         <p class="large">
-          Neu Interactive is the work of NYC-based technologist Mark Neuburger and collaborators. We provide digital and tangible engineering services, specializing in front end engineering and web development for early stage startups, creative agencies, and other businesses.
+          Neu Interactive is the work of NYC-based technologist <a href="https://www.markneuburger.com/" rel="noopener noreferrer" target="_blank">Mark Neuburger</a> and collaborators. We provide digital and tangible engineering services, specializing in front end engineering and web development for early stage startups, creative agencies, and other businesses.
         </p>
       </div>
     </section>
-    <section>
+    <section id="work">
       <div class="content">
         <h3>work</h3>
         <div
@@ -30,21 +30,21 @@
         >
           <dl>
             <dt>Client</dt>
-            <dd v-html="work.client"></dd>
+            <dd>{{ work.client }}</dd>
             <dt>Service</dt>
-            <dd v-html="work.service"></dd>
+            <dd>{{ work.service }}</dd>
             <dt>Tech stack</dt>
-            <dd v-html="work.stack"></dd>
+            <dd>{{ work.stack }}</dd>
           </dl>
-          <p v-html="work.description"></p>
+          <p>{{ work.description }}</p>
         </div>
       </div>
     </section>
-    <section>
+    <section id="contact">
       <div class="content">
         <h3>contact</h3>
         <p class="large">
-          Let’s make something together! Whether you’re looking for help building your product or seeking a partner to work with you on a creative project, we’d love to talk. Get in touch at mark@neuinteractive.com and let’s chat about your project.
+          Let’s make something together! Whether you’re looking for help building your product or seeking a partner to work with you on a creative project, we’d love to talk. Get in touch at <a href="mailto:mark@neuinteractive.com">mark@neuinteractive.com</a> and let’s chat about your project.
         </p>
       </div>
     </section>
@@ -52,6 +52,7 @@
 </template>
 
 <script>
+import { TweenLite, ScrollToPlugin, Power1 } from 'gsap/all'
 import NeuHeader from '~/components/neu-header'
 import Particles from '~/components/particles'
 
@@ -76,12 +77,20 @@ export default {
         client: 'Meredith Monk/The House Foundation',
         service: 'Design + full stack development',
         stack: 'React, Next.js, WordPress, Google Cloud',
-        description: 'The artist, composer and musician Meredith Monk was seeking a new website to coincide with promotion of an upcoming benefit concert. The new site would need to advertise upcoming events and host her performance repertory, educational workshops, and store. We partnered with Computer Lab to create a new online experience that would not only meet her short term goals, but would be flexible enough to grow as she continued to expand their her presence. A WordPress background allows her foundation full editing control over content.'
+        description: 'The artist, composer and musician Meredith Monk was seeking a new website to coincide with promotion of an upcoming benefit concert. The new site would need to advertise upcoming events and host her performance repertory, educational workshops, and store. We partnered with Computer Lab to create a new online experience that would not only meet her short term goals, but would be flexible enough to grow as she continued to expand their her presence. A WordPress backend allows her foundation full editing control over content.'
       }]
     }
   },
   head: {
     title: 'Neu Interactive'
+  },
+  methods: {
+    scrollTo (target) {
+      TweenLite.to(window, 0.75, {
+        scrollTo: target,
+        ease: Power1.easeInOut
+      })
+    }
   }
 }
 </script>

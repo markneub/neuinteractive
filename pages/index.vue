@@ -84,7 +84,8 @@ export default {
     }
   },
   head: {
-    title: 'Neu Interactive'
+    title: 'Neu Interactive',
+    description: 'Neu Interactive provides software solutions in NYC and remotely.'
   },
   methods: {
     scrollTo (target) {

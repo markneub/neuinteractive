@@ -35,6 +35,9 @@ module.exports = {
   plugins: [{
     src: '~plugins/vue-scrollmagic.js',
     ssr: false
+  }, {
+    src: '~plugins/ga.js',
+    ssr: false
   }],
 
   /*

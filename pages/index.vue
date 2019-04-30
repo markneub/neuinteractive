@@ -119,7 +119,7 @@ section {
       right: 0;
       bottom: 0;
       height: 10rem;
-      background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(32,35,36,1) 100%);
+      background: linear-gradient(to bottom, rgba(32,35,36,0) 0%,rgba(32,35,36,1) 100%);
       pointer-events: none;
       content: '';
     }

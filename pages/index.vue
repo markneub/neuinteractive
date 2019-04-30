@@ -134,14 +134,26 @@ section {
 
   .splash {
     h1 {
-      font-size: 5rem;
+      font-size: 3.4rem;
       @include headlineFont;
       color: $accent;
+      @media screen and (min-width: 400px) {
+        font-size: 4rem;
+      }
+      @media screen and (min-width: 500px) {
+        font-size: 5rem;
+      }
     }
 
     h2 {
-      font-size: 2.7rem;
+      font-size: 1.8rem;
       font-weight: 400;
+      @media screen and (min-width: 400px) {
+        font-size: 2.1rem;
+      }
+      @media screen and (min-width: 500px) {
+        font-size: 2.7rem;
+      }
     }
   }
 

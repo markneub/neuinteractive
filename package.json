@@ -1,7 +1,7 @@
 {
   "name": "neu-interactive",
   "version": "1.0.0",
-  "description": "Neu Interactive website",
+  "description": "Neu Interactive provides creative software solutions in NYC and remotely.",
   "author": "Mark Neuburger",
   "private": true,
   "scripts": {

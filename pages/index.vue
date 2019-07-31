@@ -47,6 +47,9 @@
         <p class="large">
           Let’s make something together! Whether you’re looking for help building your product or seeking a partner to work with you on a creative project, we’d love to talk. Get in touch at <a href="mailto:mark@neuinteractive.com">mark@neuinteractive.com</a> and let’s chat about your project.
         </p>
+        <p class="copyright">
+          Copyright © 2019 Neu Interactive LLC. <a href="https://www.github.com/markneub/neuinteractive/" rel="noopener noreferrer" target="_blank">View the source code for this website</a>.
+        </p>
       </div>
     </section>
   </div>
@@ -188,6 +191,17 @@ section {
 
       &.large {
         font-size: 2rem;
+      }
+
+      &.copyright {
+        opacity: 0.6;
+        font-size: 1.3rem;
+        margin-top: 3.6rem;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
 

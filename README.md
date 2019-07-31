@@ -1,6 +1,6 @@
-# neu-interactive
+# Neu Interactive
 
-> Neu Interactive website
+This is the Vue/Nuxt.js source code for the Neu Interactive homepage at https://www.neuinteractive.com/.
 
 ## Build Setup
 

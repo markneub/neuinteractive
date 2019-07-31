@@ -67,6 +67,11 @@ export default {
   data () {
     return {
       works: [{
+        client: 'Siimpl',
+        service: 'Back end development',
+        stack: 'NodeJS, Express, Jest',
+        description: 'Neu Interactive worked with Seattle-based software consultancy Siimpl on behalf of a client that was behind schedule and struggling with a complicated codebase. We refactored spaghetti code to fix errors and standardize on modern syntax, added comprehensive unit test coverage with Jest to check for logic bugs and avoid regressions, and created and implemented a security plan to prioritize and mitigate critical errors before launch.'
+      }, {
         client: 'Ask Lorem',
         service: 'Front end development',
         stack: 'React, GraphQL, Apollo',

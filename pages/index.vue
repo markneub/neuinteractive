@@ -191,6 +191,7 @@ section {
 
       &.large {
         font-size: 2rem;
+        line-height: 1.45;
       }
 
       &.copyright {

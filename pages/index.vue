@@ -92,8 +92,10 @@ export default {
       }]
     }
   },
-  head: {
-    title: 'Neu Interactive'
+  head () {
+    return {
+      title: 'Neu Interactive'
+    }
   },
   methods: {
     scrollTo (target) {

@@ -16,7 +16,7 @@
       <div class="content">
         <h3>about</h3>
         <p class="large">
-          Neu Interactive is the work of NYC-based technologist <a href="https://www.markneuburger.com/" rel="noopener noreferrer" target="_blank">Mark Neuburger</a> and collaborators. We provide digital and tangible engineering services, specializing in front end engineering and web development for early stage startups, creative agencies, and other businesses.
+          Neu Interactive is the work of NYC-based technologist <a href="https://www.markneuburger.com/" rel="noopener noreferrer" target="_blank">Mark Neuburger</a> and collaborators. We provide digital and tangible engineering services, specializing in front end engineering and full stack app development for early stage startups, creative agencies, and other businesses.
         </p>
       </div>
     </section>
@@ -48,7 +48,7 @@
           Let’s make something together! Whether you’re looking for help building your product or seeking a partner to work with you on a creative project, we’d love to talk. Get in touch at <a href="mailto:mark@neuinteractive.com">mark@neuinteractive.com</a> and let’s chat about your project.
         </p>
         <p class="copyright">
-          Copyright © 2019 Neu Interactive LLC. <a href="https://www.github.com/markneub/neuinteractive/" rel="noopener noreferrer" target="_blank">View the source code for this website</a>.
+          © 2020 Neu Interactive LLC. <a href="https://www.github.com/markneub/neuinteractive/" rel="noopener noreferrer" target="_blank">View the source code for this website</a>.
         </p>
       </div>
     </section>
@@ -191,13 +191,13 @@ section {
 
       &.large {
         font-size: 2rem;
-        line-height: 1.45;
+        line-height: 1.5;
       }
 
       &.copyright {
         opacity: 0.6;
         font-size: 1.3rem;
-        margin-top: 3.6rem;
+        margin-top: 7.2rem;
         transition: opacity 0.2s;
 
         &:hover {

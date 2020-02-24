@@ -11,7 +11,12 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { property: 'og:title', content: 'Neu Interactive' },
+      { property: 'og:description', content: 'Design-minded software solutions' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://www.neuinteractive.com' },
+      { property: 'og:image', content: 'https://www.neuinteractive.com/neu-lightbg.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

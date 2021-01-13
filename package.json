@@ -17,10 +17,10 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "gsap": "^2.1.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "5.0.0",
     "nuxt": "^2.14.8",
     "particles.js": "^2.0.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "10.1.1",
     "vue-scrollmagic": "^1.1.0"
   },
   "devDependencies": {

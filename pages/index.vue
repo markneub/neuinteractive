@@ -26,7 +26,7 @@
         <div class="spotlight-wrap">
           <img src="~/assets/logomosh.gif" alt="Glitchy Neu Interactive logo" />
           <p>
-            LA-based <a href="https://www.airtight.cc/" rel="noopener noreferrer" target="_blank">Airtight</a> partnered with Neu Interactive to collaborate on the next generation of their popular online glitch art tool, PhotoMosh. We spearheaded a complete rewrite of PhotoMosh as a cross-platform desktop app sporting a new UI, support for high-res exports, and many more new features. Learn more about <a href="https://photomosh.com/pro/" rel="noopener noreferrer" target="_blank">PhotoMosh-Pro</a>.
+            LA-based <a href="https://www.airtight.cc/" rel="noopener noreferrer" target="_blank">Airtight</a> partnered with Neu Interactive to collaborate on the next version of their popular online glitch art tool, PhotoMosh. We spearheaded a complete rewrite of PhotoMosh as a cross-platform desktop app sporting a new UI, support for high-res exports, and many more new features. Learn more about <a href="https://photomosh.com/pro/" rel="noopener noreferrer" target="_blank">PhotoMosh-Pro</a>.
           </p>
         </div>
       </div>

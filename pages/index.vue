@@ -48,7 +48,7 @@
           Let’s make something together! Whether you’re looking for help building your product or seeking a partner to work with you on a creative project, we’d love to talk. Get in touch at <a href="mailto:mark@neuinteractive.com">mark@neuinteractive.com</a> and let’s chat about your project.
         </p>
         <p class="copyright">
-          © 2020 Neu Interactive LLC. <a href="https://www.github.com/markneub/neuinteractive/" rel="noopener noreferrer" target="_blank">View the source code for this website</a>.
+          © 2021 Neu Interactive LLC. <a href="https://www.github.com/markneub/neuinteractive/" rel="noopener noreferrer" target="_blank">View the source code for this website</a>.
         </p>
       </div>
     </section>

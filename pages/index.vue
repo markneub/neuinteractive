@@ -180,9 +180,23 @@ section {
 
   .spotlight-wrap {
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 500px) {
+      flex-direction: row;
+    }
+
+    img {
+      width: 100px;
+      height: 96px;
+    }
 
     p {
-      margin-left: 1.6rem;
+      margin-top: 1.6rem;
+      @media screen and (min-width: 500px) {
+        margin-top: -0.4rem;
+        margin-left: 1.6rem;
+      }
     }
   }
 

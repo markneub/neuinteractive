@@ -2,6 +2,7 @@
   <nav id="neu-header">
     <img class="logomark" src="~/assets/logomark.png" alt="Neu logomark" />
     <span @click="$emit('scroll-to', '#about')">about</span>
+    <span @click="$emit('scroll-to', '#spotlight')">spotlight</span>
     <span @click="$emit('scroll-to', '#work')">work</span>
     <span @click="$emit('scroll-to', '#contact')">contact</span>
   </nav>

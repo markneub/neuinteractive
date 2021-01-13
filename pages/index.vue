@@ -20,6 +20,17 @@
         </p>
       </div>
     </section>
+    <section id="spotlight">
+      <div class="content">
+        <h3>spotlight</h3>
+        <div class="spotlight-wrap">
+          <img src="~/assets/logomosh.gif" alt="Glitchy Neu Interactive logo" />
+          <p>
+            LA-based <a href="https://www.airtight.cc/" rel="noopener noreferrer" target="_blank">Airtight</a> partnered with Neu Interactive to collaborate on the next generation of their popular online glitch art tool, PhotoMosh. We spearheaded a complete rewrite of PhotoMosh as a cross-platform desktop app sporting a new UI, support for high-res exports, and many more new features. Learn more about <a href="https://photomosh.com/pro/" rel="noopener noreferrer" target="_blank">PhotoMosh-Pro</a>.
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="work">
       <div class="content">
         <h3>work</h3>
@@ -164,6 +175,14 @@ section {
       @media screen and (min-width: 500px) {
         font-size: 2.7rem;
       }
+    }
+  }
+
+  .spotlight-wrap {
+    display: flex;
+
+    p {
+      margin-left: 1.6rem;
     }
   }
 
